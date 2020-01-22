@@ -55,7 +55,7 @@ $(document).ready(function(){
                     '<div class="container-fluid carteRestiko ' + record.id + ' list-item text-center shadow">'+
                         "<h2 class='btn btn-success m-1' id='" + record.id + "'>Restiko  du " + record.get("Date d'aujourd'hui") + "</h2>"+
                         '<div class="row mt-5 text-center bg-light p-3">'+
-                            '<div class="col mt-5">'+
+                            '<div class="col mt-5 shadow border">'+
                                 "<h3><u>Ce que j'ai fais</u></h3>"+
                                 "<p class=' mb-5'>" + record.get("Ce que j'ai fais") + "</p>"+
                                 "<h3><u>Ce que j'ai aimé</u></h3>"+
@@ -65,7 +65,7 @@ $(document).ready(function(){
                                 "<h3><u>Qu'es-ce qui m'a manqué</u></h3>"+
                                 "<p class=' mb-5'>" + record.get("Qu'es-ce qui m'a manqué") + "</p>"+
                             "</div>"+
-                            '<div class="col">'+
+                            '<div class="col mt-5 shadow border">'+
                                 "<h3><u>Ce que j'ai appris</u></h3>"+
                                 "<p class=' mb-5'>" + record.get("Ce que j'ai appris") + "</p>"+
                                 "<h3><u>Ce que j'ai utilisé de nouveau</u></h3>"+
