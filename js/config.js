@@ -7,5 +7,6 @@ var base = Airtable.base('appVkRjVbMUIEoSHs');
 
 $('#disconectUser').on('click', function(){
     localStorage.clear();
+    sessionStorage.clear();
     window.location = 'index.html';
 })

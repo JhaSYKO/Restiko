@@ -11,7 +11,7 @@ $(document).ready(function createRestikoCard() {
 
             $("#listRestiko").append(
                 '<div class="container-fluid carteRestiko ' + record.id + ' list-item text-center shadow">'+
-                    "<h2 class='btn btn-success m-1' id='" + record.id + "'>" + record.get("Date d'aujourd'hui") + "</h2>"+
+                    "<h2 class='btn btn-success m-1' id='" + record.id + "'>Restiko du " + record.get("Date d'aujourd'hui") + "</h2>"+
                     '<div class="row mt-5 contentCard text-center bg-light p-3">'+
                         '<div class="col mt-5">'+
                             "<h3><u>Ce que j'ai fais</u></h3>"+
@@ -38,6 +38,10 @@ $(document).ready(function createRestikoCard() {
                                 "<p class=' mb-5'>" + record.get("Objectifs Atteint ou Pas (A ou P)") + "</p>"+
                             "<h3><u>Note de la journée (?/5)</u></h3>"+
                                 "<p class=' mb-5'>" + record.get("Note de la journée (?/5)") + "</p>"+
+                                "<div class='text-right mb-5'>"+
+                                "<p>modifié le :</p>"+
+                                "<p>"+record.get('created_date')+"</p>"+
+                                "</div>"+
                             '<form class="text-center">'+
                                 "<button type='submit' class='btn btn-success m-1'>Revenir</button>"+
                             '</form>'+

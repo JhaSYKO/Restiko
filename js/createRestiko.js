@@ -2,9 +2,10 @@
 $(document).ready(function () {
     $("#formulaireRestiko").empty();
 
-    var connectionId = localStorage.getItem('username');
+    const connectionId = localStorage.getItem('username');
+    const sessionId = sessionStorage.getItem("username")
   
-    if(connectionId || sessionStorage.getItem("username") != null) {
+    if(connectionId || sessionId == 'admin') {
         $("#restikoConnectionForm").hide();
         $("#formulaireRestiko").show();
         $("#mainNav").show();
@@ -20,4 +21,6 @@ $(document).ready(function () {
         else{
             window.location = "index.html";
         }
+        console.log(connectionId, sessionId)
 });
+
