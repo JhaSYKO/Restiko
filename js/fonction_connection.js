@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    if(localStorage.getItem('username') || sessionStorage.getItem("username") != null){
+    if(localStorage.getItem('username') != null || sessionStorage.getItem("username") != null){
         $("#restikoConnectionForm").hide();
         $("#mainNav").show();
         $(".masthead").show();
