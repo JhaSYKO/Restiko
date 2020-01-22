@@ -4,8 +4,9 @@ $(document).ready(function () {
 
     const connectionId = localStorage.getItem('username');
     const sessionId = sessionStorage.getItem("username")
+    const adminId = "admin"
   
-    if(connectionId || sessionId == 'admin') {
+    if(connectionId == adminId || sessionId == adminId) {
         $("#restikoConnectionForm").hide();
         $("#formulaireRestiko").show();
         $("#mainNav").show();
